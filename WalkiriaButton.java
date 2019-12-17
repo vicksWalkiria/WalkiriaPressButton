@@ -1,4 +1,4 @@
-public class WalkiriaButton extends android.support.v7.widget.AppCompatButton implements View.OnTouchListener {
+public class WalkiriaButton extends androidx.appcompat.widget.AppCompatButton implements View.OnTouchListener {
     public WalkiriaButton(Context context) {
         super(context);
         this.setOnTouchListener(this);
@@ -22,10 +22,7 @@ public class WalkiriaButton extends android.support.v7.widget.AppCompatButton im
                 view.setAlpha(0.8f);
                 break;
             }
-            case MotionEvent.ACTION_CANCEL: {
-                view.setAlpha(1.0f);
-                break;
-            }
+            case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP: {
                 view.setAlpha(1.0f);
                 break;
